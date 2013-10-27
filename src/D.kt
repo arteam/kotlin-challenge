@@ -2,9 +2,9 @@ import java.io.InputStream
 import java.io.Reader
 import java.io.BufferedReader
 
-fun main(args: Array<String>) {
+/*fun main(args: Array<String>) {
    println(calculateMatrix(BufferedReader(System.`in`.reader("UTF-8"))))
-}
+}*/
 
 fun calculateMatrix(input: BufferedReader): String {
     val firstLine = input.readLine()!!.split(" ")
