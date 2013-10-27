@@ -1,6 +1,6 @@
-fun main(args: Array<String>) {
+/*fun main(args: Array<String>) {
     println(amountSumsOfPrimeNumbers(readLine()!!))
-}
+}*/
 
 fun amountSumsOfPrimeNumbers(line: String): Int {
     val number = line.toInt()
