@@ -41,10 +41,13 @@ fun processMatrix(first: List<Int>, second: List<Int>): String {
 
     val maxSubstring = first.subList(maxI - max, maxI)
 
-    val result = StringBuilder(max.toString()).append("\n")
-    for (i in (0..maxSubstring.size - 2)) {
-        result.append(maxSubstring[i]).append(" ")
+    val result = StringBuilder(max.toString())
+    if(maxSubstring.size > 0){
+        result.append("\n")
+        for (i in (0..maxSubstring.size-1)) {
+            result.append(maxSubstring[i])
+            if(i < maxSubstring.size - 1) result.append(" ")
+        }
     }
-    if(maxSubstring.size > 0)  result.append(maxSubstring[maxSubstring.size - 1])
     return result.toString()
 }

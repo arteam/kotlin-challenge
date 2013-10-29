@@ -35,8 +35,7 @@ assertEquals(
 4
 8 9 7 6""")))
         assertEquals(
-                """0
-""", result)
+                """0""", result)
     }
 
     Test fun test4(){
@@ -57,8 +56,7 @@ assertEquals(
 1
 2""")))
         assertEquals(
-                """0
-""", result)
+                """0""", result)
     }
 
     Test fun test6(){
