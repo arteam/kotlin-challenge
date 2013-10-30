@@ -3,10 +3,11 @@ import java.util.Stack
 import java.util.Deque
 import java.util.ArrayDeque
 
+/*
 fun main(args: Array<String>) {
     val reader = BufferedReader(System.`in`.reader("UTF-8"))
     println(maxSubstring(reader))
-}
+}*/
 
 fun maxSubstring(input: BufferedReader): String {
     val m = input.readLine()!!.toInt()
