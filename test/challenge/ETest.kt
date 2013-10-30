@@ -6,18 +6,18 @@ import java.io.BufferedReader
 import java.io.StringReader
 
 class ETest{
-    Test fun test1(){
+    Test fun test1() {
         val result = maxSubstring(BufferedReader(StringReader(
-"""3
+                """3
 1 2 3
 4
 2 3 1 5""")))
-assertEquals(
-"""2
+        assertEquals(
+                """2
 2 3""", result)
     }
 
-    Test fun test2(){
+    Test fun test2() {
         val result = maxSubstring(BufferedReader(StringReader(
                 """5
 1 2 3 4 5
@@ -28,7 +28,7 @@ assertEquals(
 2 3 4""", result)
     }
 
-    Test fun test3(){
+    Test fun test3() {
         val result = maxSubstring(BufferedReader(StringReader(
                 """5
 1 2 3 4 5
@@ -38,7 +38,7 @@ assertEquals(
                 """0""", result)
     }
 
-    Test fun test4(){
+    Test fun test4() {
         val result = maxSubstring(BufferedReader(StringReader(
                 """5
 1 2 3 4 5
@@ -49,7 +49,7 @@ assertEquals(
 5""", result)
     }
 
-    Test fun test5(){
+    Test fun test5() {
         val result = maxSubstring(BufferedReader(StringReader(
                 """1
 1
@@ -59,7 +59,7 @@ assertEquals(
                 """0""", result)
     }
 
-    Test fun test6(){
+    Test fun test6() {
         val result = maxSubstring(BufferedReader(StringReader(
                 """5
 -1 -2 -3 -4 -5
@@ -70,7 +70,7 @@ assertEquals(
 -2 -3""", result)
     }
 
-    Test fun test7(){
+    Test fun test7() {
         val result = maxSubstring(BufferedReader(StringReader(
                 """5
 -1 -2 3 -4 5
@@ -79,5 +79,16 @@ assertEquals(
         assertEquals(
                 """4
 -2 3 -4 5""", result)
+    }
+
+    Test fun test8() {
+        val result = maxSubstring(BufferedReader(StringReader(
+                """8
+0 9 -2 8 4 4 4 3
+8
+1 0 9 2 4 4 4 2""")))
+        assertEquals(
+                """5
+0 9 4 4 4""", result)
     }
 }
